@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h2>Write a JavaScript program to check from two given integers whether one of them is 8 or their sum or difference is 8.</h2>
+
+    <script>
+ function checkForEight(num1, num2) {
+  if (num1 === 8 || num2 === 8) {
+    return true;
+  } else if (num1 + num2 === 8 || Math.abs(num1 - num2) === 8) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+
+    </h2>
+
+    <script>
+        function nearestTo100(a, b) {
+  const diffA = Math.abs(a - 100);
+  const diffB = Math.abs(b - 100);
+
+  if (diffA < diffB) {
+    return a;
+  } else if (diffB < diffA) {
+    return b;
+  } else {
+    return "Both values are equally near to 100.";
+  }
+}
+console.log(nearestTo100(90, 120));
+    </script>
+</body>
+</html>

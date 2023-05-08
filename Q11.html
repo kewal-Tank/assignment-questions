@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Write a JavaScript program to calculate number of days left until next Christmas </h2>
+
+    <script>
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const christmas = new Date(`${currentYear}-12-25`);
+        if (today.getMonth() == 11 && today.getDate() > 25) {
+
+            christmas.setFullYear(currentYear + 1);
+        }
+        const oneDay = 24 * 60 * 60 * 1000;
+        const daysLeft = Math.round((christmas.getTime() - today.getTime()) / oneDay);
+        console.log(`There are ${daysLeft} days left until Christmas.`);
+
+    </script>
+</body>
+
+</html>

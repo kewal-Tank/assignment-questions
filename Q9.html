@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.    </h2>
+    <script>
+         let year = Number(prompt ('Please enter the year :'))
+        if(((year % 4 == 0)  && (year % 100 != 0)) || ( year % 400 == 0) ){
+            console.log(`${year} is a leap year`)
+        }else{
+            console.log(`${year} is not a leap year`)
+        }
+    </script>
+</body>
+</html>
